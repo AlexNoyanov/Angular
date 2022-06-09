@@ -34,3 +34,10 @@
   border: 3px solid #1b1c1b;
   border-radius: 0 0 25px 25px;
 }
+
+.btn{
+  margin-top: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
