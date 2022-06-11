@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
+  cardData = {
+    name: 'Test Card',
+    title: '',
+    description: '',
+    image: '',
+    link: '',
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  cardClick() {
+    console.log('Card clicked');
+    console.log('Card data:', this.cardData);
+  }
 }

@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WalletComponent implements OnInit {
 
-  numberOfCards = 5
+  walletID: number;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.walletID = 1;
   }
 
 }

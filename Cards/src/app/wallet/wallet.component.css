@@ -14,11 +14,10 @@
   border: 3px solid #1b1c1b;
   align: center;
   width: 600px;
-  ext-align: center;
-  background-color: #1976d2;
+  text-align: center;
   font-size: 18px;
   border-radius: 25px;
-  background-color: #5c605d;
+  background-color: slategrey;
 }
 
 .wallet-line{
