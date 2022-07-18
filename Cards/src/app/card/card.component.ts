@@ -22,5 +22,8 @@ export class CardComponent implements OnInit {
   cardClick() {
     console.log('Card clicked');
     console.log('Card data:', this.cardData);
+    // Push out the card from the wallet animation
+
   }
+
 }

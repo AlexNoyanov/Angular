@@ -1,16 +1,15 @@
+import {NgModule} from "@angular/core";
 import {HttpClientModule} from "@angular/common/http";
 
 export class DataLoadingService {
-  @NgModule({
-    imports: [
-      HttpClientModule,
-    ],
-  })
+  private http: any;
+  // @NgModule({
+  //   imports: [
+  //     HttpClientModule,
+  //   ],
+  // })
   constructor() { }
   //getCardData(cardID:number){}
-  getAllCardsData(walletID:number){
-
-  }
-
-  }
+  // getAllCardsData(walletID:number){
+  // }
 }

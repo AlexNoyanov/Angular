@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { WalletComponent } from './wallet/wallet.component';
+import {DataLoadingService} from "./data.loading.service";
 
 @NgModule({
   declarations: [

@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wallet.component.css']
 })
 export class WalletComponent implements OnInit {
-
-  walletID: number;
-
+    walletID = 1;
   constructor() { }
 
   ngOnInit(): void {
