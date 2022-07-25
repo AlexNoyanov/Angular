@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'any'
 })
 export class UserService {
 
-  constructor() { }
+  constructor() {
+    console.log("UserService")
+  }
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import {KEK} from "../token";
+import {UserActionService} from "../user-action.service";
 
 @Component({
   selector: 'app-a-component',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(KEK) public kek: string, service: UserActionService) { }
 
   ngOnInit(): void {
 

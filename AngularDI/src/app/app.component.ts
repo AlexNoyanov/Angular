@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, Inject} from '@angular/core';
 import {Router} from "@angular/router";
+import {KEK} from "./token";
+import {UserActionService} from "./user-action.service";
 
 @Component({
   selector: 'app-root',
@@ -9,6 +11,6 @@ import {Router} from "@angular/router";
 export class AppComponent {
   title = 'AngularDI';
 
-  constructor() { }
+  constructor(@Inject(KEK) public kek: string , service: UserActionService) { }
 
 }

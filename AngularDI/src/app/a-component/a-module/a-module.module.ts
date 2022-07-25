@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AModuleRoutingModule } from './a-module-routing.module';
-import {EComponentComponent} from "../e-component/e-component.component";
-import {EServiceService} from "../e-component/e-service.service";
+import {AComponentComponent} from "../a-component.component";
+import {KEK} from "../../token";
 
 
 @NgModule({
-  declarations: [EComponentComponent],
+  declarations: [AComponentComponent],
   imports: [
     CommonModule,
     AModuleRoutingModule
-  ]
-  providers: [{provide: EServiceService,useClass: EServiceService}]}],
+  ],
+  exports: [AComponentComponent],
+  providers: [{provide: KEK, useValue:'kekA'}],
 })
 export class AModuleModule { }

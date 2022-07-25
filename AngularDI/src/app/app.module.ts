@@ -9,8 +9,8 @@ import  { ReflectiveInjector} from "@angular/core";
 import {UserService} from "./user.service";
 import { CComponentComponent } from './c-component/c-component.component';
 import { DComponentComponent } from './d-component/d-component.component';
-import { EComponentComponent } from './a-component/e-component/e-component.component';
-import { FComponentComponent } from './a-component/e-component/f-component/f-component.component';
+import {KEK} from "./token";
+import {AModuleModule} from "./a-component/a-module/a-module.module";
 
 const injector: Injector = ReflectiveInjector.resolveAndCreate([{provide:UserService,useClass: UserService},])
 
@@ -23,19 +23,18 @@ const TOKEN = "SOME SECRET TOKEN"
 @NgModule({
   declarations: [
     AppComponent,
-    AComponentComponent,
     BComponentComponent,
     CComponentComponent,
     DComponentComponent,
-    EComponentComponent,
-    FComponentComponent
   ],
   imports: [
     BrowserModule,
+    AModuleModule,
   ],
   providers:
     [{provide:UserService,useClass: UserService},
-    {provide: API_URL, useValue:TOKEN}],
+    {provide: API_URL, useValue:TOKEN}, {provide: KEK, useValue:'kek'},
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
