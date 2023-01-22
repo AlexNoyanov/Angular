@@ -1,0 +1,31 @@
+
+.menu {
+  /* Rectangle 3 */
+
+  position: absolute;
+  width: 1920px;
+  height: 137px;
+  left: calc(50% - 1920px/2);
+  top: -4px;
+
+  background: #0F1624;
+  &-name {
+     /* Alexander Noyanov */
+
+     position: absolute;
+     width: 295px;
+     height: 45px;
+     left: calc(50% - 295px/2 - 782.5px);
+     top: 43px;
+
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 30px;
+     line-height: 45px;
+     /* identical to box height */
+
+     color: #FFFFFF;
+
+   }
+}
